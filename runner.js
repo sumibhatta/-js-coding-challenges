@@ -67,7 +67,6 @@ files.forEach(f => {
 // MAIN RUNNER
 function runSelected() {
     const file = selector.value;
-
     document.getElementById("prompt").textContent =
         prompts[file] || "(No prompt available)";
 
@@ -76,7 +75,11 @@ function runSelected() {
         .then(res => res.text())
         .then(code => {
             document.getElementById("code").textContent = code;
-
+            
+            if (!code.trim()) {
+                document.getElementById("output").textContent = "";
+                return;
+            }
             // Remove old dynamic script
             document.querySelectorAll("script[data-load]").forEach(s => s.remove());
 

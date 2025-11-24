@@ -11,13 +11,12 @@ const prompts = {
 
     "JavaScript Basics/Q2. Template Literal Formatter.js":
         `Write a function formatUser(name, age) that returns: 
-        ""User &lt;name&gt; is &lt;age&gt; years old""
+        ""User <name> is <age> years old""
         Use template literals.`,
 
-    "JavaScript Basics/Q3. Truthy/Falsy Filter.js":
+    "JavaScript Basics/Q3. Truthy-Falsy Filter.js":
         `Write a function filterTruthy(arr) that returns only truthy values. 
-        Do not use Boolean()
-        —use an if condition.`,
+        Do not use Boolean() use an if condition.`,
 
     "JavaScript Basics/Q4. Safe Division.js":
         `Write a function divide(a, b) that returns "Invalid" if division is not possible 
