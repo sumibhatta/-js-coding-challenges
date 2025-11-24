@@ -1,0 +1,89 @@
+# JavaScript Basics
+New-Item -ItemType Directory "JavaScript Basics"
+Set-Location "JavaScript Basics"
+New-Item -ItemType File "Q1. Type Checker.js"
+New-Item -ItemType File "Q2. Template Literal Formatter.js"
+New-Item -ItemType File "Q3. Truthy-Falsy Filter.js"
+New-Item -ItemType File "Q4. Safe Division.js"
+New-Item -ItemType File "Q5. Variable Scope Demo.js"
+Set-Location ..
+
+# Control Flow & Functions
+New-Item -ItemType Directory "Control Flow & Functions"
+Set-Location "Control Flow & Functions"
+New-Item -ItemType File "Q1. Grade Calculator.js"
+New-Item -ItemType File "Q2. Day Name (Switch).js"
+New-Item -ItemType File "Q3. Reverse Array (Using for...of).js"
+New-Item -ItemType File "Q4. Sum All (Rest Parameters).js"
+New-Item -ItemType File "Q5. Counter (Closure).js"
+Set-Location ..
+
+# Arrays, Objects & JSON
+New-Item -ItemType Directory "Arrays, Objects & JSON"
+Set-Location "Arrays, Objects & JSON"
+New-Item -ItemType File "Q1. Array Editor.js"
+New-Item -ItemType File "Q2. Deep Access.js"
+New-Item -ItemType File "Q3. Dynamic Keys.js"
+New-Item -ItemType File "Q4. JSON Converter.js"
+New-Item -ItemType File "Q5. Shallow vs Deep Copy.js"
+Set-Location ..
+
+# Asynchronous JavaScript
+New-Item -ItemType Directory "Asynchronous JavaScript"
+Set-Location "Asynchronous JavaScript"
+New-Item -ItemType File "Q1. Delayed Greeting.js"
+New-Item -ItemType File "Q2. Interval Counter.js"
+New-Item -ItemType File "Q3. Promise Calculator.js"
+New-Item -ItemType File "Q4. Parallel Fetch.js"
+New-Item -ItemType File "Q5. Async Await Fetch.js"
+Set-Location ..
+
+# Functional Programming
+New-Item -ItemType Directory "Functional Programming"
+Set-Location "Functional Programming"
+New-Item -ItemType File "Q1. Square All.js"
+New-Item -ItemType File "Q2. Filter Adults.js"
+New-Item -ItemType File "Q3. Count Words.js"
+New-Item -ItemType File "Q4. Find By ID.js"
+New-Item -ItemType File "Q5. Chained Transformation.js"
+Set-Location ..
+
+# ES6 Modules & npm
+New-Item -ItemType Directory "ES6 Modules & npm"
+Set-Location "ES6 Modules & npm"
+New-Item -ItemType File "Q1. Named Export Calculator.js"
+New-Item -ItemType File "Q2. Default Export.js"
+New-Item -ItemType File "Q3. Namespace Import.js"
+New-Item -ItemType File "Q4. npm Script Runner.js"
+New-Item -ItemType File "Q5. Using the Installed Package.js"
+Set-Location ..
+
+# Destructuring, Spread, Rest
+New-Item -ItemType Directory "Destructuring, Spread, Rest"
+Set-Location "Destructuring, Spread, Rest"
+New-Item -ItemType File "Q1. Array Destructure.js"
+New-Item -ItemType File "Q2. Object Destructure & Rename.js"
+New-Item -ItemType File "Q3. Rest Parameters Sum.js"
+New-Item -ItemType File "Q4. Merge Config.js"
+New-Item -ItemType File "Q5. Safe Access.js"
+Set-Location ..
+
+# Errors, Debugging & Storage
+New-Item -ItemType Directory "Errors, Debugging & Storage"
+Set-Location "Errors, Debugging & Storage"
+New-Item -ItemType File "Q1. Throw Custom Error.js"
+New-Item -ItemType File "Q2. Async Error Handler.js"
+New-Item -ItemType File "Q3. Debugger Demo.js"
+New-Item -ItemType File "Q4. Storage Setter.js"
+New-Item -ItemType File "Q5. Cookie Creator.js"
+Set-Location ..
+
+# REST API
+New-Item -ItemType Directory "REST API"
+Set-Location "REST API"
+New-Item -ItemType File "Q1. Fetch Users.js"
+New-Item -ItemType File "Q2. Create Post.js"
+New-Item -ItemType File "Q3. Auth Fetch.js"
+New-Item -ItemType File "Q4. Parallel Fetch Merge.js"
+New-Item -ItemType File "Q5. Paginated Loader.js"
+Set-Location ..
