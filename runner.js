@@ -83,20 +83,43 @@ function runSelected() {
             // Remove old dynamic script
             document.querySelectorAll("script[data-load]").forEach(s => s.remove());
 
-            // Load fresh script to execute run()
-            const s = document.createElement("script");
-            s.src = file + "?v=" + Date.now();
-            s.dataset.load = "true";
-            s.onload = () => {
-                if (typeof run === "function") {
-                    const result = run();
-                    document.getElementById("output").textContent =
-                        result !== undefined ? result : "(no output)";
-                } else {
-                    document.getElementById("output").textContent =
-                        "⚠ No run() function found in this file.";
-                }
-            };
-            document.body.appendChild(s);
+           // Check if it's an ES6 Modules question
+            if (file.includes("ES6 Modules")) {
+                // Use dynamic import for module files - FIXED PATH
+                import('./' + file + '?v=' + Date.now())
+                    .then(module => {
+                        if (module.run) {
+                            const result = module.run();
+                            document.getElementById("output").textContent =
+                                result !== undefined ? result : "(no output)";
+                        } else {
+                            document.getElementById("output").textContent =
+                                "⚠ No run() function found in this file.";
+                        }
+                    })
+                    .catch(error => {
+                        document.getElementById("output").textContent =
+                            "Error loading module: " + error.message;
+                    });
+            } else {
+                // Regular script files - use existing method
+                const s = document.createElement("script");
+                s.src = file + "?v=" + Date.now();
+                s.dataset.load = "true";
+                s.onload = () => {
+                    if (typeof run === "function") {
+                        const result = run();
+                        document.getElementById("output").textContent =
+                            result !== undefined ? result : "(no output)";
+                    } else {
+                        document.getElementById("output").textContent =
+                            "⚠ No run() function found in this file.";
+                    }
+                };
+                document.body.appendChild(s);
+            }
         });
 }
+
+// Make runSelected available globally
+window.runSelected = runSelected;
